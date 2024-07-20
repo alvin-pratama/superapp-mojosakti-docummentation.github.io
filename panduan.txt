@@ -1,0 +1,27 @@
+USER GUIDE
+1. Masuk ke halaman register
+2. Cek nik dan no kk apakah sudah pernah terdaftar pada aplikasi atau belum
+3. Isi Formulir pendaftaran secara lengkap meliputi data akun dan pribadi, sertakan foto selfi menunjukan ktp, dikarenakan untuk aktivasi akses akun pada layanan-layanan publik yang tersedia
+4. Selesai
+5. Masuk menggunakan nik dan nomor kk yang sudah terdaftar pada halaman login
+6. Pesan aktivasi akun pada dashboard menandakan status keterangan aktivasi akun anda saat ini
+7. Masuk ke Tab keluarga pada halaman profil, kemudian isi biodata lengkap keluarga
+8. Setelah selesai mengisi biodata keluarga dan identitas pribadi sudah benar, maka lakukan pengajuan aktivasi akun
+9. Tunggu konfirmasi akun diaktivasi kurang lebih 1x24jam, aktivasi akan dilakukan pengecekan data terlebih dahulu oleh dispendukcapil
+10. Setelah akun diaktivasi, bisa diperiksa melalui halaman profil
+11. Akun siap digunakan untuk mengakses semua fitur layanan yang tersedia
+
+MASUK
+1. Masuk ke halaman login, masukkan nik dan nomor kk sesuai data yang telah terdaftar
+
+KELUAR
+1. Masuk ke halaman dashboard
+2. Pilih tombol menu dan pilih keluar aplikasi
+
+PENGAJUAN KEPENDUDUKAN
+1. Masuk ke menu halaman kependudukan
+2. Lakukan pengajuan seperti instruksi yang tersedia pada layanan
+
+PENGAJUAN TATA RUANG
+1. Masuk ke menu halaman tata ruang
+2. Lakukan pengajuan seperti instruksi yang tersedia pada layanan
