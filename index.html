@@ -13,7 +13,7 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         .body {
             background-color: rgb(255, 255, 255);
             background-size: cover;
@@ -24,11 +24,13 @@
             height: 100vh;
             max-width: 820px;
         }
+
         .menu {
             padding: 10px 20px;
         }
+
         .content {
-            margin: 10px 20px;
+            margin: 10px 3px;
             padding: 20px 15px;
             background-color: #a3a3a3;
             display: none;
@@ -53,11 +55,41 @@
         }
     </style>
     <style>
-        .pendaftaran_pengguna, .akses_masuk, .akses_keluar, .pengajuan_kependudukan, .pengajuan_tataruang {
+        .pendaftaran_pengguna,
+        .akses_masuk,
+        .akses_keluar,
+        .pengajuan_kependudukan,
+        .pengajuan_tataruang {
             padding: 30px;
             background-color: white;
-            display: none; /* Awalnya sembunyikan semua elemen */
+            display: none;
+            /* Awalnya sembunyikan semua elemen */
             font-size: smaller;
+        }
+    </style>
+    <style>
+        /* Kontainer untuk memusatkan gambar */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            /* Pusatkan gambar */
+            margin: 0;
+            /* Hapus margin */
+        }
+
+        .responsive-image {
+            width: 100%;
+            /* Default untuk mobile */
+            border-radius: 10px;
+            border: 2px solid #000;
+        }
+
+        @media (min-width: 768px) {
+
+            /* Tablet dan lebih besar */
+            .responsive-image {
+                width: 45%;
+            }
         }
     </style>
 </head>
@@ -65,14 +97,17 @@
 <body>
     <div class="body">
         <div style="background-color: rgb(172, 22, 22);">
-            <div style="background-image: url('assets/images/mokercitybrandingputih (1).png'); background-size: cover; background-size: 78px; background-repeat: no-repeat; background-position: 83% 10%;">
-                <div style="background-image: url('assets/images/mokercitybrandingputih (1).png'); background-color: rgb(172, 22, 22, 0.56); background-size: cover; background-size: 48px; background-repeat: no-repeat; background-position: 74% 80%;">
+            <div
+                style="background-image: url('assets/images/mokercitybrandingputih (1).png'); background-size: cover; background-size: 78px; background-repeat: no-repeat; background-position: 83% 10%;">
+                <div
+                    style="background-image: url('assets/images/mokercitybrandingputih (1).png'); background-color: rgb(172, 22, 22, 0.56); background-size: cover; background-size: 48px; background-repeat: no-repeat; background-position: 74% 80%;">
                     <div style="background-color: rgb(172, 22, 22, 0.5);">
                         <div style="display: flex; justify-content: center; align-items: center; padding: 15px 0px;">
                             <div style="background-color: white; padding: 3px; border-radius: 50%">
                                 <img src="assets/images/pemkab.png" height="27px" width="27px" />
                             </div>
-                            <span style="font-size: 14px; color: white;"><span style="padding: 0px 10px;"><span style="font-weight: bold;"> SUPERAPP</span> MOJOSAKTI</span></span>
+                            <span style="font-size: 14px; color: white;"><span style="padding: 0px 10px;"><span
+                                        style="font-weight: bold;"> SUPERAPP</span> MOJOSAKTI</span></span>
                         </div>
                     </div>
                 </div>
@@ -81,21 +116,25 @@
         <!--  -->
         <div class="scroll-vertical pb-3 px-0 element" style="height: calc(100vh - 65px); overflow-y: auto;">
             <div class="menu">
-                
+
                 <div class="callout">
                     <div class="callout-header">Selamat datang!</div>
                     <div class="callout-container" style="font-size: 14px; color: #4c4b4b;">
-                        "Kami dengan senang hati memperkenalkan halaman panduan ini untuk membantu Anda memanfaatkan aplikasi kami secara maksimal. Di sini, Anda akan menemukan informasi penting, langkah-langkah, dan tips berguna untuk memandu Anda dalam menggunakan berbagai fitur dan layanan yang tersedia."
+                        "Kami dengan senang hati memperkenalkan halaman panduan ini untuk membantu Anda memanfaatkan
+                        aplikasi kami secara maksimal. Di sini, Anda akan menemukan informasi penting, langkah-langkah,
+                        dan tips berguna untuk memandu Anda dalam menggunakan berbagai fitur dan layanan yang tersedia."
                         <br>
                         <br>
-                        "Kami berharap panduan ini dapat memberikan kemudahan dan mempercepat adaptasi Anda dalam menjelajahi aplikasi kami. Jika Anda memiliki pertanyaan atau memerlukan bantuan tambahan, jangan ragu untuk menghubungi tim dukungan kami."
+                        "Kami berharap panduan ini dapat memberikan kemudahan dan mempercepat adaptasi Anda dalam
+                        menjelajahi aplikasi kami. Jika Anda memiliki pertanyaan atau memerlukan bantuan tambahan,
+                        jangan ragu untuk menghubungi tim dukungan kami."
                         <br>
                         <br>
                         Selamat menggunakan <b>Superapp Mojosakti</b>!
                     </div>
                 </div>
                 <br>
-    
+
                 <div class="form-group">
                     <!-- <label for="panduanSelect"><b>Panduan Penggunaan</b></label> -->
                     <select id="panduanSelect" class="form-control">
@@ -103,8 +142,8 @@
                         <option value="pendaftaran_pengguna">Pendaftaran Pengguna</option>
                         <option value="akses_masuk">Akses Masuk</option>
                         <option value="akses_keluar">Akses Keluar</option>
-                        <option value="pengajuan_kependudukan">Pengajuan kependudukan</option>
-                        <option value="pengajuan_tataruang">Pengajuan Tataruang</option>
+                        <option value="pengajuan_kependudukan">Pengajuan Kependudukan</option>
+                        <option value="pengajuan_tataruang">Pengajuan Tata Ruang</option>
                     </select>
                 </div>
             </div>
@@ -115,15 +154,58 @@
                     <hr>
                     <ol>
                         <li>Masuk ke halaman pendaftaran.</li>
+                        <div class="image-container">
+                            <img src="assets/images/daftar.jpg" class="responsive-image" />
+                        </div>
+                        <br>
                         <li>Periksa NIK dan nomor KK untuk memastikan apakah sudah pernah terdaftar pada aplikasi.</li>
-                        <li>Isi formulir pendaftaran secara lengkap, meliputi data akun dan pribadi. Sertakan foto selfie yang menunjukkan KTP, karena ini diperlukan untuk aktivasi akses akun pada layanan-layanan publik yang tersedia.</li>
+                        <div class="image-container">
+                            <img src="assets/images/cek nik dan kk.jpg" class="responsive-image" />
+                        </div>
+                        <br>
+                        <li>Isi formulir pendaftaran secara lengkap, meliputi data akun dan pribadi. Sertakan foto
+                            selfie yang menunjukkan KTP, karena ini diperlukan untuk aktivasi akses akun pada
+                            layanan-layanan publik yang tersedia.</li>
+                        <br>
                         <li>Proses pendaftaran selesai.</li>
+                        <div class="image-container">
+                            <img src="assets/images/daftar selesai.jpg" class="responsive-image" />
+                        </div>
+                        <br>
                         <li>Masuk menggunakan NIK dan nomor KK yang sudah terdaftar pada halaman login.</li>
-                        <li>Pesan aktivasi akun akan muncul di dashboard, menunjukkan status aktivasi akun Anda saat ini.</li>
+                        <div class="image-container">
+                            <img src="assets/images/login.jpg" class="responsive-image" />
+                        </div>
+                        <br>
+                        <li>Pesan aktivasi akun akan muncul di dashboard, menunjukkan status aktivasi akun Anda saat
+                            ini.</li>
+                        <div class="image-container">
+                            <img src="assets/images/pengajuan belum diajukan.jpg" class="responsive-image" />
+                        </div>
+                        <br>
                         <li>Masuk ke tab "Keluarga" pada halaman profil, kemudian isi biodata lengkap keluarga.</li>
-                        <li>Setelah selesai mengisi biodata keluarga dan memastikan identitas pribadi sudah benar, ajukan permohonan aktivasi akun.</li>
-                        <li>Tunggu konfirmasi aktivasi akun, yang memerlukan waktu kurang lebih 1x24 jam. Aktivasi akan dilakukan setelah pengecekan data oleh Dispendukcapil.</li>
+                        <div class="image-container">
+                            <img src="assets/images/tab keluarga.jpg" class="responsive-image" />
+                        </div>
+                        <br>
+                        <div class="image-container">
+                            <img src="assets/images/tambah keluarga.jpg" class="responsive-image" />
+                        </div>
+                        <br>
+                        <li>Setelah selesai mengisi biodata keluarga dan memastikan identitas pribadi sudah benar,
+                            ajukan permohonan aktivasi akun.</li>
+                        <div class="image-container">
+                            <img src="assets/images/ajukan aktivasi.jpg" class="responsive-image" />
+                        </div>
+                        <br>
+                        <li>Tunggu konfirmasi aktivasi akun, yang memerlukan waktu kurang lebih 1x24 jam. Aktivasi akan
+                            dilakukan setelah pengecekan data oleh Dispendukcapil.</li>
+                        <br>
                         <li>Setelah akun diaktivasi, Anda dapat memeriksanya melalui halaman profil.</li>
+                        <div class="image-container">
+                            <img src="assets/images/selesai aktivasi.jpg" class="responsive-image" />
+                        </div>
+                        <br>
                         <li>Akun siap digunakan untuk mengakses semua fitur layanan yang tersedia.</li>
                     </ol>
                 </div>
@@ -131,16 +213,27 @@
                     <b>Masuk</b>
                     <hr>
                     <ol>
-                        <li>Masuk ke halaman login, lalu masukkan NIK dan nomor KK sesuai dengan data yang telah terdaftar.</li>
+                        <li>Masuk ke halaman login, lalu masukkan NIK dan nomor KK sesuai dengan data yang telah
+                            terdaftar.</li>
+                        <div class="image-container">
+                            <img src="assets/images/login.jpg" class="responsive-image" />
+                        </div>
                     </ol>
                 </div>
-            
+
                 <div class="akses_keluar">
                     <b>Keluar</b>
                     <hr>
                     <ol>
                         <li>Masuk ke halaman dashboard.</li>
+                        <div class="image-container">
+                            <img src="assets/images/menu.jpg" class="responsive-image" />
+                        </div>
+                        <br>
                         <li>Pilih tombol menu dan pilih opsi "Keluar".</li>
+                        <div class="image-container">
+                            <img src="assets/images/keluar.jpg" class="responsive-image" />
+                        </div>
                     </ol>
                 </div>
                 <div class="pengajuan_kependudukan">
@@ -148,7 +241,18 @@
                     <hr>
                     <ol>
                         <li>Masuk ke menu halaman kependudukan.</li>
+                        <div class="image-container">
+                            <img src="assets/images/menu pengajuan kependudukan.jpg" class="responsive-image" />
+                        </div>
+                        <br>
                         <li>Lakukan pengajuan sesuai dengan instruksi yang tersedia pada layanan.</li>
+                        <div class="image-container">
+                            <img src="assets/images/pelayanan kependudukan.jpg" class="responsive-image" />
+                        </div>
+                        <br>
+                        <div class="image-container">
+                            <img src="assets/images/pelayanan kependudukan 2.jpg" class="responsive-image" />
+                        </div>
                     </ol>
                 </div>
                 <div class="pengajuan_tataruang">
@@ -156,15 +260,23 @@
                     <hr>
                     <ol>
                         <li>Masuk ke menu halaman tata ruang.</li>
+                        <div class="image-container">
+                            <img src="assets/images/menu pengajuan tata ruang.jpg" class="responsive-image" />
+                        </div>
+
+                        <br>
                         <li>Lakukan pengajuan sesuai dengan instruksi yang tersedia pada layanan.</li>
+                        <div class="image-container">
+                            <img src="assets/images/pelayanan tata ruang.jpg" class="responsive-image" />
+                        </div>
                     </ol>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <script>
-        document.getElementById('panduanSelect').addEventListener('change', function() {
+        document.getElementById('panduanSelect').addEventListener('change', function () {
             // Ambil nilai yang dipilih
             var selectedValue = this.value;
 
@@ -173,7 +285,7 @@
             var contentElement = document.querySelector('.content');
 
             // Sembunyikan semua elemen panduan
-            panduanElements.forEach(function(element) {
+            panduanElements.forEach(function (element) {
                 element.style.display = 'none';
             });
 
@@ -185,7 +297,7 @@
             // Tampilkan elemen panduan yang sesuai dengan nilai yang dipilih
             if (selectedValue) {
                 var selectedElements = document.querySelectorAll(`.${selectedValue}`);
-                selectedElements.forEach(function(element) {
+                selectedElements.forEach(function (element) {
                     element.style.display = 'block';
                 });
 
